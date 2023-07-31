@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B81054412A781E8800A6C8EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054402A781E8800A6C8EC /* AppDelegate.swift */; };
+		B81054432A781E8800A6C8EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054422A781E8800A6C8EC /* SceneDelegate.swift */; };
+		B81054452A781E8800A6C8EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054442A781E8800A6C8EC /* ViewController.swift */; };
+		B81054482A781E8800A6C8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81054462A781E8800A6C8EC /* Main.storyboard */; };
+		B810544B2A781E8800A6C8EC /* EarthQuest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B81054492A781E8800A6C8EC /* EarthQuest.xcdatamodeld */; };
+		B810544D2A781E8900A6C8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B810544C2A781E8900A6C8EC /* Assets.xcassets */; };
+		B81054502A781E8900A6C8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B810544E2A781E8900A6C8EC /* LaunchScreen.storyboard */; };
+		B810545B2A781E8900A6C8EC /* EarthQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810545A2A781E8900A6C8EC /* EarthQuestTests.swift */; };
+		B81054652A781E8900A6C8EC /* EarthQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054642A781E8900A6C8EC /* EarthQuestUITests.swift */; };
+		B81054672A781E8900A6C8EC /* EarthQuestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054662A781E8900A6C8EC /* EarthQuestUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B81054572A781E8900A6C8EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B81054352A781E8800A6C8EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B810543C2A781E8800A6C8EC;
+			remoteInfo = EarthQuest;
+		};
+		B81054612A781E8900A6C8EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B81054352A781E8800A6C8EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B810543C2A781E8800A6C8EC;
+			remoteInfo = EarthQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B810543D2A781E8800A6C8EC /* EarthQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81054402A781E8800A6C8EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B81054422A781E8800A6C8EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B81054442A781E8800A6C8EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B81054472A781E8800A6C8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B810544A2A781E8800A6C8EC /* EarthQuest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EarthQuest.xcdatamodel; sourceTree = "<group>"; };
+		B810544C2A781E8900A6C8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B810544F2A781E8900A6C8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B81054512A781E8900A6C8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B81054562A781E8900A6C8EC /* EarthQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B810545A2A781E8900A6C8EC /* EarthQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuestTests.swift; sourceTree = "<group>"; };
+		B81054602A781E8900A6C8EC /* EarthQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81054642A781E8900A6C8EC /* EarthQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuestUITests.swift; sourceTree = "<group>"; };
+		B81054662A781E8900A6C8EC /* EarthQuestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B810543A2A781E8800A6C8EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81054532A781E8900A6C8EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B810545D2A781E8900A6C8EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B81054342A781E8800A6C8EC = {
+			isa = PBXGroup;
+			children = (
+				B810543F2A781E8800A6C8EC /* EarthQuest */,
+				B81054592A781E8900A6C8EC /* EarthQuestTests */,
+				B81054632A781E8900A6C8EC /* EarthQuestUITests */,
+				B810543E2A781E8800A6C8EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B810543E2A781E8800A6C8EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B810543D2A781E8800A6C8EC /* EarthQuest.app */,
+				B81054562A781E8900A6C8EC /* EarthQuestTests.xctest */,
+				B81054602A781E8900A6C8EC /* EarthQuestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B810543F2A781E8800A6C8EC /* EarthQuest */ = {
+			isa = PBXGroup;
+			children = (
+				B81054402A781E8800A6C8EC /* AppDelegate.swift */,
+				B81054422A781E8800A6C8EC /* SceneDelegate.swift */,
+				B81054442A781E8800A6C8EC /* ViewController.swift */,
+				B81054462A781E8800A6C8EC /* Main.storyboard */,
+				B810544C2A781E8900A6C8EC /* Assets.xcassets */,
+				B810544E2A781E8900A6C8EC /* LaunchScreen.storyboard */,
+				B81054512A781E8900A6C8EC /* Info.plist */,
+				B81054492A781E8800A6C8EC /* EarthQuest.xcdatamodeld */,
+			);
+			path = EarthQuest;
+			sourceTree = "<group>";
+		};
+		B81054592A781E8900A6C8EC /* EarthQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				B810545A2A781E8900A6C8EC /* EarthQuestTests.swift */,
+			);
+			path = EarthQuestTests;
+			sourceTree = "<group>";
+		};
+		B81054632A781E8900A6C8EC /* EarthQuestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B81054642A781E8900A6C8EC /* EarthQuestUITests.swift */,
+				B81054662A781E8900A6C8EC /* EarthQuestUITestsLaunchTests.swift */,
+			);
+			path = EarthQuestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B810543C2A781E8800A6C8EC /* EarthQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B810546A2A781E8900A6C8EC /* Build configuration list for PBXNativeTarget "EarthQuest" */;
+			buildPhases = (
+				B81054392A781E8800A6C8EC /* Sources */,
+				B810543A2A781E8800A6C8EC /* Frameworks */,
+				B810543B2A781E8800A6C8EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EarthQuest;
+			productName = EarthQuest;
+			productReference = B810543D2A781E8800A6C8EC /* EarthQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B81054552A781E8900A6C8EC /* EarthQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B810546D2A781E8900A6C8EC /* Build configuration list for PBXNativeTarget "EarthQuestTests" */;
+			buildPhases = (
+				B81054522A781E8900A6C8EC /* Sources */,
+				B81054532A781E8900A6C8EC /* Frameworks */,
+				B81054542A781E8900A6C8EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B81054582A781E8900A6C8EC /* PBXTargetDependency */,
+			);
+			name = EarthQuestTests;
+			productName = EarthQuestTests;
+			productReference = B81054562A781E8900A6C8EC /* EarthQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B810545F2A781E8900A6C8EC /* EarthQuestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B81054702A781E8900A6C8EC /* Build configuration list for PBXNativeTarget "EarthQuestUITests" */;
+			buildPhases = (
+				B810545C2A781E8900A6C8EC /* Sources */,
+				B810545D2A781E8900A6C8EC /* Frameworks */,
+				B810545E2A781E8900A6C8EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B81054622A781E8900A6C8EC /* PBXTargetDependency */,
+			);
+			name = EarthQuestUITests;
+			productName = EarthQuestUITests;
+			productReference = B81054602A781E8900A6C8EC /* EarthQuestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B81054352A781E8800A6C8EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B810543C2A781E8800A6C8EC = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B81054552A781E8900A6C8EC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B810543C2A781E8800A6C8EC;
+					};
+					B810545F2A781E8900A6C8EC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B810543C2A781E8800A6C8EC;
+					};
+				};
+			};
+			buildConfigurationList = B81054382A781E8800A6C8EC /* Build configuration list for PBXProject "EarthQuest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B81054342A781E8800A6C8EC;
+			productRefGroup = B810543E2A781E8800A6C8EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B810543C2A781E8800A6C8EC /* EarthQuest */,
+				B81054552A781E8900A6C8EC /* EarthQuestTests */,
+				B810545F2A781E8900A6C8EC /* EarthQuestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B810543B2A781E8800A6C8EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81054502A781E8900A6C8EC /* LaunchScreen.storyboard in Resources */,
+				B810544D2A781E8900A6C8EC /* Assets.xcassets in Resources */,
+				B81054482A781E8800A6C8EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81054542A781E8900A6C8EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B810545E2A781E8900A6C8EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B81054392A781E8800A6C8EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81054452A781E8800A6C8EC /* ViewController.swift in Sources */,
+				B810544B2A781E8800A6C8EC /* EarthQuest.xcdatamodeld in Sources */,
+				B81054412A781E8800A6C8EC /* AppDelegate.swift in Sources */,
+				B81054432A781E8800A6C8EC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81054522A781E8900A6C8EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B810545B2A781E8900A6C8EC /* EarthQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B810545C2A781E8900A6C8EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81054672A781E8900A6C8EC /* EarthQuestUITestsLaunchTests.swift in Sources */,
+				B81054652A781E8900A6C8EC /* EarthQuestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B81054582A781E8900A6C8EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B810543C2A781E8800A6C8EC /* EarthQuest */;
+			targetProxy = B81054572A781E8900A6C8EC /* PBXContainerItemProxy */;
+		};
+		B81054622A781E8900A6C8EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B810543C2A781E8800A6C8EC /* EarthQuest */;
+			targetProxy = B81054612A781E8900A6C8EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B81054462A781E8800A6C8EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B81054472A781E8800A6C8EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B810544E2A781E8900A6C8EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B810544F2A781E8900A6C8EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B81054682A781E8900A6C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B81054692A781E8900A6C8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B810546B2A781E8900A6C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548J77AC83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EarthQuest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.G0mdzix.EarthQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B810546C2A781E8900A6C8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548J77AC83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EarthQuest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.G0mdzix.EarthQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B810546E2A781E8900A6C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548J77AC83;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.G0mdzix.EarthQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthQuest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EarthQuest";
+			};
+			name = Debug;
+		};
+		B810546F2A781E8900A6C8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548J77AC83;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.G0mdzix.EarthQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthQuest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EarthQuest";
+			};
+			name = Release;
+		};
+		B81054712A781E8900A6C8EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548J77AC83;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.G0mdzix.EarthQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EarthQuest;
+			};
+			name = Debug;
+		};
+		B81054722A781E8900A6C8EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 548J77AC83;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.G0mdzix.EarthQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EarthQuest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B81054382A781E8800A6C8EC /* Build configuration list for PBXProject "EarthQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81054682A781E8900A6C8EC /* Debug */,
+				B81054692A781E8900A6C8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B810546A2A781E8900A6C8EC /* Build configuration list for PBXNativeTarget "EarthQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B810546B2A781E8900A6C8EC /* Debug */,
+				B810546C2A781E8900A6C8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B810546D2A781E8900A6C8EC /* Build configuration list for PBXNativeTarget "EarthQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B810546E2A781E8900A6C8EC /* Debug */,
+				B810546F2A781E8900A6C8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B81054702A781E8900A6C8EC /* Build configuration list for PBXNativeTarget "EarthQuestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81054712A781E8900A6C8EC /* Debug */,
+				B81054722A781E8900A6C8EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B81054492A781E8800A6C8EC /* EarthQuest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B810544A2A781E8800A6C8EC /* EarthQuest.xcdatamodel */,
+			);
+			currentVersion = B810544A2A781E8800A6C8EC /* EarthQuest.xcdatamodel */;
+			path = EarthQuest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B81054352A781E8800A6C8EC /* Project object */;
+}
