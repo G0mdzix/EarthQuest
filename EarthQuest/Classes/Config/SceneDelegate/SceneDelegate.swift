@@ -33,7 +33,7 @@ extension SceneDelegate {
   }
 
   func sceneDidEnterBackground(_ scene: UIScene) {
-    (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+    // (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
   }
 }
 

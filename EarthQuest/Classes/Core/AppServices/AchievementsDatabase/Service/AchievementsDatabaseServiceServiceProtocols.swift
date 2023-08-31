@@ -4,4 +4,5 @@ import Foundation
 
 //swiftlint:disable all
 protocol AchievementsDatabaseServiceProtocol: AnyObject {
+  func getTested()
 }

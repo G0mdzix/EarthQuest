@@ -1,8 +1,7 @@
-//
-//  FirebaseTokenUserDefaultsProtocol.swift
-//  EarthQuest
-//
-//  Created by Mateusz Gozdzik on 13/08/2023.
-//
-
 import Foundation
+
+protocol FirebaseTokenUserDefaultsProtocol {
+  func saveFCMToken(_ token: String)
+  func getFCMToken() -> String
+  func isFirebaseTokenPresent() -> Bool 
+}

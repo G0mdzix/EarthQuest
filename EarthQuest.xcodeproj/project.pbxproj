@@ -7,16 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B81054412A781E8800A6C8EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054402A781E8800A6C8EC /* AppDelegate.swift */; };
-		B81054432A781E8800A6C8EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054422A781E8800A6C8EC /* SceneDelegate.swift */; };
-		B81054452A781E8800A6C8EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054442A781E8800A6C8EC /* ViewController.swift */; };
-		B81054482A781E8800A6C8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81054462A781E8800A6C8EC /* Main.storyboard */; };
+		B8060CEB2A7D9450007A0662 /* ESTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = B8060CEA2A7D9450007A0662 /* ESTabBarController */; };
+		B8060CEF2A7DA261007A0662 /* UserLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = B8060CEE2A7DA261007A0662 /* UserLottie.json */; };
+		B8060CF12A7DAD5A007A0662 /* EarthQuestLottie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060CF02A7DAD5A007A0662 /* EarthQuestLottie.swift */; };
+		B8060CF32A7DB5F5007A0662 /* mapp.json in Resources */ = {isa = PBXBuildFile; fileRef = B8060CF22A7DB5F5007A0662 /* mapp.json */; };
+		B8060CF62A7DCAEE007A0662 /* TabBarBounceAnimationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060CF52A7DCAEE007A0662 /* TabBarBounceAnimationItemView.swift */; };
+		B8060CF82A7DCF45007A0662 /* TabBarBasicItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060CF72A7DCF45007A0662 /* TabBarBasicItemView.swift */; };
+		B8060CFB2A7EEA55007A0662 /* HomeBadgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060CFA2A7EEA55007A0662 /* HomeBadgeCollectionViewCell.swift */; };
+		B8060CFE2A7EF9AE007A0662 /* HomeBadgeCellUIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060CFD2A7EF9AE007A0662 /* HomeBadgeCellUIFactory.swift */; };
+		B8060D012A7F021F007A0662 /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060D002A7F021F007A0662 /* UIVIewExtension.swift */; };
+		B8060D032A7F0244007A0662 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060D022A7F0244007A0662 /* UIColorExtensions.swift */; };
+		B8060D052A7F0C95007A0662 /* HomeDashboardUIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060D042A7F0C95007A0662 /* HomeDashboardUIFactory.swift */; };
+		B8060D082A7F11EF007A0662 /* HomeDashboardViewController + UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060D072A7F11EF007A0662 /* HomeDashboardViewController + UICollectionViewDataSource.swift */; };
+		B8060D0A2A7F14EB007A0662 /* HomeDashboardViewController + UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060D092A7F14EB007A0662 /* HomeDashboardViewController + UIScrollViewDelegate.swift */; };
+		B8060D0C2A7F1810007A0662 /* HomeDashboardViewController + Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060D0B2A7F1810007A0662 /* HomeDashboardViewController + Constants.swift */; };
+		B8060D0E2A7F1D44007A0662 /* HomeBadgeCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060D0D2A7F1D44007A0662 /* HomeBadgeCollectionLayout.swift */; };
+		B8060D152A804C4E007A0662 /* HomeBadgeCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8060D142A804C4E007A0662 /* HomeBadgeCellModel.swift */; };
+		B8060D192A8597C3007A0662 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8060D182A8597C3007A0662 /* GoogleService-Info.plist */; };
+		B80EBAEB2A7B091F00F967DB /* EasyUIBuilder in Frameworks */ = {isa = PBXBuildFile; productRef = B80EBAEA2A7B091F00F967DB /* EasyUIBuilder */; };
 		B810544B2A781E8800A6C8EC /* EarthQuest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B81054492A781E8800A6C8EC /* EarthQuest.xcdatamodeld */; };
-		B810544D2A781E8900A6C8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B810544C2A781E8900A6C8EC /* Assets.xcassets */; };
 		B81054502A781E8900A6C8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B810544E2A781E8900A6C8EC /* LaunchScreen.storyboard */; };
 		B810545B2A781E8900A6C8EC /* EarthQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810545A2A781E8900A6C8EC /* EarthQuestTests.swift */; };
 		B81054652A781E8900A6C8EC /* EarthQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054642A781E8900A6C8EC /* EarthQuestUITests.swift */; };
 		B81054672A781E8900A6C8EC /* EarthQuestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054662A781E8900A6C8EC /* EarthQuestUITestsLaunchTests.swift */; };
+		B81054812A782FD900A6C8EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054802A782FD900A6C8EC /* AppDelegate.swift */; };
+		B81054832A782FDE00A6C8EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054822A782FDD00A6C8EC /* SceneDelegate.swift */; };
+		B81054942A78324A00A6C8EC /* HomeDashboardRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054922A78324A00A6C8EC /* HomeDashboardRouterProtocols.swift */; };
+		B81054952A78324A00A6C8EC /* HomeDashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054932A78324A00A6C8EC /* HomeDashboardRouter.swift */; };
+		B810549B2A78324E00A6C8EC /* HomeDashboardViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054972A78324E00A6C8EC /* HomeDashboardViewControllerViewModel.swift */; };
+		B810549C2A78324E00A6C8EC /* HomeDashboardViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054982A78324E00A6C8EC /* HomeDashboardViewProtocols.swift */; };
+		B810549D2A78324E00A6C8EC /* HomeDashboardViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054992A78324E00A6C8EC /* HomeDashboardViewControllerModel.swift */; };
+		B810549E2A78324E00A6C8EC /* HomeDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810549A2A78324E00A6C8EC /* HomeDashboardViewController.swift */; };
+		B81054A22A78325200A6C8EC /* HomeDashboardInteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054A02A78325200A6C8EC /* HomeDashboardInteractorProtocols.swift */; };
+		B81054A32A78325200A6C8EC /* HomeDashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054A12A78325200A6C8EC /* HomeDashboardInteractor.swift */; };
+		B81054A72A78325700A6C8EC /* HomeDashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054A52A78325600A6C8EC /* HomeDashboardPresenter.swift */; };
+		B81054A82A78325700A6C8EC /* HomeDashboardPresenterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054A62A78325600A6C8EC /* HomeDashboardPresenterProtocols.swift */; };
+		B81054AB2A78325A00A6C8EC /* HomeDashboardAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054AA2A78325A00A6C8EC /* HomeDashboardAssembly.swift */; };
+		B81054B32A784A0000A6C8EC /* EasyNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = B81054B22A784A0000A6C8EC /* EasyNetworkManager */; };
+		B81054B52A784AA800A6C8EC /* GeoApifyPlacesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054B42A784AA800A6C8EC /* GeoApifyPlacesAPI.swift */; };
+		B81054B82A79846C00A6C8EC /* GeoApifyPlacesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054B72A79846C00A6C8EC /* GeoApifyPlacesModels.swift */; };
+		B81054BC2A799ED000A6C8EC /* EarthQuestTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054BB2A799ED000A6C8EC /* EarthQuestTabBar.swift */; };
+		B81054BE2A79B4EF00A6C8EC /* TabBarLottieAnimateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81054BD2A79B4EF00A6C8EC /* TabBarLottieAnimateItemView.swift */; };
+		B83FA34A2A859DF0009D9396 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B83FA3492A859DF0009D9396 /* FirebaseAnalytics */; };
+		B83FA34C2A859DF0009D9396 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B83FA34B2A859DF0009D9396 /* FirebaseAuth */; };
+		B83FA34E2A859DF0009D9396 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B83FA34D2A859DF0009D9396 /* FirebaseDatabase */; };
+		B83FA3522A85A309009D9396 /* FirebaseDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3512A85A309009D9396 /* FirebaseDatabaseService.swift */; };
+		B83FA3552A85A9BC009D9396 /* GeoAPIKeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3542A85A9BC009D9396 /* GeoAPIKeyModel.swift */; };
+		B83FA3592A86C0AF009D9396 /* FirebaseDatabaseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3582A86C0AF009D9396 /* FirebaseDatabaseErrors.swift */; };
+		B83FA35C2A86C259009D9396 /* FirebaseDatabaseServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA35B2A86C259009D9396 /* FirebaseDatabaseServiceProtocol.swift */; };
+		B83FA35E2A86F491009D9396 /* CombineExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA35D2A86F491009D9396 /* CombineExtensions.swift */; };
+		B83FA3612A86FF1B009D9396 /* AchievementsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3602A86FF1B009D9396 /* AchievementsEnum.swift */; };
+		B83FA3642A871200009D9396 /* FirebaseDatabaseReferencePathEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3632A871200009D9396 /* FirebaseDatabaseReferencePathEnum.swift */; };
+		B83FA3662A881A20009D9396 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = B83FA3652A881A20009D9396 /* FirebaseMessaging */; };
+		B83FA36B2A881B40009D9396 /* FirebaseTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA36A2A881B40009D9396 /* FirebaseTokenService.swift */; };
+		B83FA36F2A88573D009D9396 /* FirebaseTokenUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA36E2A88573D009D9396 /* FirebaseTokenUserDefaults.swift */; };
+		B83FA3712A88578D009D9396 /* FirebaseTokenUserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3702A88578D009D9396 /* FirebaseTokenUserDefaultsProtocol.swift */; };
+		B83FA3732A8858B8009D9396 /* FirebaseTokenServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3722A8858B8009D9396 /* FirebaseTokenServiceProtocol.swift */; };
+		B83FA3752A885AFB009D9396 /* FirebaseTokenServiceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3742A885AFB009D9396 /* FirebaseTokenServiceBuilder.swift */; };
+		B83FA37B2A8860DE009D9396 /* AppDelegateDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA37A2A8860DE009D9396 /* AppDelegateDependencyInjection.swift */; };
+		B83FA37D2A886CCF009D9396 /* FirebaseDatabaseServiceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA37C2A886CCF009D9396 /* FirebaseDatabaseServiceBuilder.swift */; };
+		B83FA3822A89B1FF009D9396 /* CoreDataServiceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA37F2A89B1FF009D9396 /* CoreDataServiceBuilder.swift */; };
+		B83FA3832A89B1FF009D9396 /* CoreDataServiceServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3802A89B1FF009D9396 /* CoreDataServiceServiceProtocols.swift */; };
+		B83FA3842A89B1FF009D9396 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3812A89B1FF009D9396 /* CoreDataService.swift */; };
+		B83FA3862A8A6318009D9396 /* CoreDataServiceObjectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3852A8A6318009D9396 /* CoreDataServiceObjectBuilder.swift */; };
+		B83FA38A2A8AE2D7009D9396 /* CoreDataErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3892A8AE2D7009D9396 /* CoreDataErrors.swift */; };
+		B83FA38C2A8AF8F7009D9396 /* CoreDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA38B2A8AF8F7009D9396 /* CoreDataModels.swift */; };
+		B83FA3912A8B0539009D9396 /* AchievementsDatabaseServiceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA38E2A8B0539009D9396 /* AchievementsDatabaseServiceBuilder.swift */; };
+		B83FA3922A8B0539009D9396 /* AchievementsDatabaseServiceServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA38F2A8B0539009D9396 /* AchievementsDatabaseServiceServiceProtocols.swift */; };
+		B83FA3932A8B0539009D9396 /* AchievementsDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3902A8B0539009D9396 /* AchievementsDatabaseService.swift */; };
+		B83FA3972A8C3F87009D9396 /* AchievementsDatabaseServiceUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3962A8C3F87009D9396 /* AchievementsDatabaseServiceUserDefaults.swift */; };
+		B83FA3992A8C3F9A009D9396 /* AchievementsDatabaseServiceUserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83FA3982A8C3F9A009D9396 /* AchievementsDatabaseServiceUserDefaultsProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +97,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B8060CEE2A7DA261007A0662 /* UserLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserLottie.json; sourceTree = "<group>"; };
+		B8060CF02A7DAD5A007A0662 /* EarthQuestLottie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuestLottie.swift; sourceTree = "<group>"; };
+		B8060CF22A7DB5F5007A0662 /* mapp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapp.json; sourceTree = "<group>"; };
+		B8060CF52A7DCAEE007A0662 /* TabBarBounceAnimationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBounceAnimationItemView.swift; sourceTree = "<group>"; };
+		B8060CF72A7DCF45007A0662 /* TabBarBasicItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarBasicItemView.swift; sourceTree = "<group>"; };
+		B8060CFA2A7EEA55007A0662 /* HomeBadgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBadgeCollectionViewCell.swift; sourceTree = "<group>"; };
+		B8060CFD2A7EF9AE007A0662 /* HomeBadgeCellUIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBadgeCellUIFactory.swift; sourceTree = "<group>"; };
+		B8060D002A7F021F007A0662 /* UIVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
+		B8060D022A7F0244007A0662 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		B8060D042A7F0C95007A0662 /* HomeDashboardUIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDashboardUIFactory.swift; sourceTree = "<group>"; };
+		B8060D072A7F11EF007A0662 /* HomeDashboardViewController + UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDashboardViewController + UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		B8060D092A7F14EB007A0662 /* HomeDashboardViewController + UIScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDashboardViewController + UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		B8060D0B2A7F1810007A0662 /* HomeDashboardViewController + Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDashboardViewController + Constants.swift"; sourceTree = "<group>"; };
+		B8060D0D2A7F1D44007A0662 /* HomeBadgeCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBadgeCollectionLayout.swift; sourceTree = "<group>"; };
+		B8060D142A804C4E007A0662 /* HomeBadgeCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBadgeCellModel.swift; sourceTree = "<group>"; };
+		B8060D182A8597C3007A0662 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B810543D2A781E8800A6C8EC /* EarthQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B81054402A781E8800A6C8EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B81054422A781E8800A6C8EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B81054442A781E8800A6C8EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B81054472A781E8800A6C8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B810544A2A781E8800A6C8EC /* EarthQuest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EarthQuest.xcdatamodel; sourceTree = "<group>"; };
-		B810544C2A781E8900A6C8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B810544F2A781E8900A6C8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B81054512A781E8900A6C8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B81054562A781E8900A6C8EC /* EarthQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +122,50 @@
 		B81054602A781E8900A6C8EC /* EarthQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81054642A781E8900A6C8EC /* EarthQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuestUITests.swift; sourceTree = "<group>"; };
 		B81054662A781E8900A6C8EC /* EarthQuestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B81054802A782FD900A6C8EC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B81054822A782FDD00A6C8EC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B81054922A78324A00A6C8EC /* HomeDashboardRouterProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardRouterProtocols.swift; sourceTree = "<group>"; };
+		B81054932A78324A00A6C8EC /* HomeDashboardRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardRouter.swift; sourceTree = "<group>"; };
+		B81054972A78324E00A6C8EC /* HomeDashboardViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardViewControllerViewModel.swift; sourceTree = "<group>"; };
+		B81054982A78324E00A6C8EC /* HomeDashboardViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardViewProtocols.swift; sourceTree = "<group>"; };
+		B81054992A78324E00A6C8EC /* HomeDashboardViewControllerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardViewControllerModel.swift; sourceTree = "<group>"; };
+		B810549A2A78324E00A6C8EC /* HomeDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardViewController.swift; sourceTree = "<group>"; };
+		B81054A02A78325200A6C8EC /* HomeDashboardInteractorProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardInteractorProtocols.swift; sourceTree = "<group>"; };
+		B81054A12A78325200A6C8EC /* HomeDashboardInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardInteractor.swift; sourceTree = "<group>"; };
+		B81054A52A78325600A6C8EC /* HomeDashboardPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardPresenter.swift; sourceTree = "<group>"; };
+		B81054A62A78325600A6C8EC /* HomeDashboardPresenterProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardPresenterProtocols.swift; sourceTree = "<group>"; };
+		B81054AA2A78325A00A6C8EC /* HomeDashboardAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDashboardAssembly.swift; sourceTree = "<group>"; };
+		B81054B42A784AA800A6C8EC /* GeoApifyPlacesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoApifyPlacesAPI.swift; sourceTree = "<group>"; };
+		B81054B72A79846C00A6C8EC /* GeoApifyPlacesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoApifyPlacesModels.swift; sourceTree = "<group>"; };
+		B81054BB2A799ED000A6C8EC /* EarthQuestTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuestTabBar.swift; sourceTree = "<group>"; };
+		B81054BD2A79B4EF00A6C8EC /* TabBarLottieAnimateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLottieAnimateItemView.swift; sourceTree = "<group>"; };
+		B81054C22A7B074400A6C8EC /* EasyUIBuilder */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = EasyUIBuilder; path = ../EasyUIBuilder; sourceTree = "<group>"; };
+		B83FA3512A85A309009D9396 /* FirebaseDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseService.swift; sourceTree = "<group>"; };
+		B83FA3542A85A9BC009D9396 /* GeoAPIKeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAPIKeyModel.swift; sourceTree = "<group>"; };
+		B83FA3582A86C0AF009D9396 /* FirebaseDatabaseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseErrors.swift; sourceTree = "<group>"; };
+		B83FA35B2A86C259009D9396 /* FirebaseDatabaseServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseServiceProtocol.swift; sourceTree = "<group>"; };
+		B83FA35D2A86F491009D9396 /* CombineExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineExtensions.swift; sourceTree = "<group>"; };
+		B83FA3602A86FF1B009D9396 /* AchievementsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsEnum.swift; sourceTree = "<group>"; };
+		B83FA3632A871200009D9396 /* FirebaseDatabaseReferencePathEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseReferencePathEnum.swift; sourceTree = "<group>"; };
+		B83FA36A2A881B40009D9396 /* FirebaseTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTokenService.swift; sourceTree = "<group>"; };
+		B83FA36C2A884E9C009D9396 /* EarthQuest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EarthQuest.entitlements; sourceTree = "<group>"; };
+		B83FA36E2A88573D009D9396 /* FirebaseTokenUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTokenUserDefaults.swift; sourceTree = "<group>"; };
+		B83FA3702A88578D009D9396 /* FirebaseTokenUserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTokenUserDefaultsProtocol.swift; sourceTree = "<group>"; };
+		B83FA3722A8858B8009D9396 /* FirebaseTokenServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTokenServiceProtocol.swift; sourceTree = "<group>"; };
+		B83FA3742A885AFB009D9396 /* FirebaseTokenServiceBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTokenServiceBuilder.swift; sourceTree = "<group>"; };
+		B83FA37A2A8860DE009D9396 /* AppDelegateDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateDependencyInjection.swift; sourceTree = "<group>"; };
+		B83FA37C2A886CCF009D9396 /* FirebaseDatabaseServiceBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseServiceBuilder.swift; sourceTree = "<group>"; };
+		B83FA37F2A89B1FF009D9396 /* CoreDataServiceBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceBuilder.swift; sourceTree = "<group>"; };
+		B83FA3802A89B1FF009D9396 /* CoreDataServiceServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceServiceProtocols.swift; sourceTree = "<group>"; };
+		B83FA3812A89B1FF009D9396 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		B83FA3852A8A6318009D9396 /* CoreDataServiceObjectBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceObjectBuilder.swift; sourceTree = "<group>"; };
+		B83FA3892A8AE2D7009D9396 /* CoreDataErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataErrors.swift; sourceTree = "<group>"; };
+		B83FA38B2A8AF8F7009D9396 /* CoreDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModels.swift; sourceTree = "<group>"; };
+		B83FA38E2A8B0539009D9396 /* AchievementsDatabaseServiceBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsDatabaseServiceBuilder.swift; sourceTree = "<group>"; };
+		B83FA38F2A8B0539009D9396 /* AchievementsDatabaseServiceServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsDatabaseServiceServiceProtocols.swift; sourceTree = "<group>"; };
+		B83FA3902A8B0539009D9396 /* AchievementsDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsDatabaseService.swift; sourceTree = "<group>"; };
+		B83FA3962A8C3F87009D9396 /* AchievementsDatabaseServiceUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsDatabaseServiceUserDefaults.swift; sourceTree = "<group>"; };
+		B83FA3982A8C3F9A009D9396 /* AchievementsDatabaseServiceUserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsDatabaseServiceUserDefaultsProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +173,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83FA34E2A859DF0009D9396 /* FirebaseDatabase in Frameworks */,
+				B80EBAEB2A7B091F00F967DB /* EasyUIBuilder in Frameworks */,
+				B83FA3662A881A20009D9396 /* FirebaseMessaging in Frameworks */,
+				B83FA34C2A859DF0009D9396 /* FirebaseAuth in Frameworks */,
+				B8060CEB2A7D9450007A0662 /* ESTabBarController in Frameworks */,
+				B83FA34A2A859DF0009D9396 /* FirebaseAnalytics in Frameworks */,
+				B81054B32A784A0000A6C8EC /* EasyNetworkManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +200,108 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8060CEC2A7DA223007A0662 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8060CFF2A7F020E007A0662 /* Extensions */,
+				B8060CED2A7DA229007A0662 /* Lottie */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B8060CED2A7DA229007A0662 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				B8060CF22A7DB5F5007A0662 /* mapp.json */,
+				B8060CEE2A7DA261007A0662 /* UserLottie.json */,
+				B8060CF02A7DAD5A007A0662 /* EarthQuestLottie.swift */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		B8060CF42A7DC775007A0662 /* ItemViews */ = {
+			isa = PBXGroup;
+			children = (
+				B81054BD2A79B4EF00A6C8EC /* TabBarLottieAnimateItemView.swift */,
+				B8060CF52A7DCAEE007A0662 /* TabBarBounceAnimationItemView.swift */,
+				B8060CF72A7DCF45007A0662 /* TabBarBasicItemView.swift */,
+			);
+			path = ItemViews;
+			sourceTree = "<group>";
+		};
+		B8060CF92A7EEA36007A0662 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8060D062A7F1184007A0662 /* ViewControllers */,
+				B8060CFC2A7EF98B007A0662 /* HomeBadgeCollection */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8060CFC2A7EF98B007A0662 /* HomeBadgeCollection */ = {
+			isa = PBXGroup;
+			children = (
+				B8060D172A804CA8007A0662 /* Data */,
+				B8060D162A804C9E007A0662 /* View */,
+			);
+			path = HomeBadgeCollection;
+			sourceTree = "<group>";
+		};
+		B8060CFF2A7F020E007A0662 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B8060D002A7F021F007A0662 /* UIVIewExtension.swift */,
+				B8060D022A7F0244007A0662 /* UIColorExtensions.swift */,
+				B83FA35D2A86F491009D9396 /* CombineExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B8060D062A7F1184007A0662 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B810549A2A78324E00A6C8EC /* HomeDashboardViewController.swift */,
+				B8060D072A7F11EF007A0662 /* HomeDashboardViewController + UICollectionViewDataSource.swift */,
+				B8060D092A7F14EB007A0662 /* HomeDashboardViewController + UIScrollViewDelegate.swift */,
+				B8060D0B2A7F1810007A0662 /* HomeDashboardViewController + Constants.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B8060D162A804C9E007A0662 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8060D0D2A7F1D44007A0662 /* HomeBadgeCollectionLayout.swift */,
+				B8060CFD2A7EF9AE007A0662 /* HomeBadgeCellUIFactory.swift */,
+				B8060CFA2A7EEA55007A0662 /* HomeBadgeCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8060D172A804CA8007A0662 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B8060D142A804C4E007A0662 /* HomeBadgeCellModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B80EBAE92A7B091F00F967DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B81054342A781E8800A6C8EC = {
 			isa = PBXGroup;
 			children = (
+				B81054C12A7B074400A6C8EC /* Packages */,
 				B810543F2A781E8800A6C8EC /* EarthQuest */,
 				B81054592A781E8900A6C8EC /* EarthQuestTests */,
 				B81054632A781E8900A6C8EC /* EarthQuestUITests */,
 				B810543E2A781E8800A6C8EC /* Products */,
+				B80EBAE92A7B091F00F967DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +318,10 @@
 		B810543F2A781E8800A6C8EC /* EarthQuest */ = {
 			isa = PBXGroup;
 			children = (
-				B81054402A781E8800A6C8EC /* AppDelegate.swift */,
-				B81054422A781E8800A6C8EC /* SceneDelegate.swift */,
-				B81054442A781E8800A6C8EC /* ViewController.swift */,
-				B81054462A781E8800A6C8EC /* Main.storyboard */,
-				B810544C2A781E8900A6C8EC /* Assets.xcassets */,
-				B810544E2A781E8900A6C8EC /* LaunchScreen.storyboard */,
+				B83FA36C2A884E9C009D9396 /* EarthQuest.entitlements */,
+				B810547E2A782F7C00A6C8EC /* Classes */,
 				B81054512A781E8900A6C8EC /* Info.plist */,
-				B81054492A781E8800A6C8EC /* EarthQuest.xcdatamodeld */,
+				B8060D182A8597C3007A0662 /* GoogleService-Info.plist */,
 			);
 			path = EarthQuest;
 			sourceTree = "<group>";
@@ -130,6 +343,354 @@
 			path = EarthQuestUITests;
 			sourceTree = "<group>";
 		};
+		B81054772A7820EF00A6C8EC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B81054BA2A799EC200A6C8EC /* TabBar */,
+				B81054852A78315C00A6C8EC /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B810547B2A782F0900A6C8EC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B8060CEC2A7DA223007A0662 /* Resources */,
+				B81054AF2A78453C00A6C8EC /* API */,
+				B81054842A78307800A6C8EC /* DataBase */,
+				B810547C2A782F1300A6C8EC /* AppServices */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B810547C2A782F1300A6C8EC /* AppServices */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA38D2A8B04D4009D9396 /* AchievementsDatabase */,
+				B83FA37E2A89AF97009D9396 /* CoreData */,
+				B83FA34F2A85A2D3009D9396 /* Firebase */,
+			);
+			path = AppServices;
+			sourceTree = "<group>";
+		};
+		B810547D2A782F2800A6C8EC /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		B810547E2A782F7C00A6C8EC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B810547F2A782F9600A6C8EC /* Config */,
+				B81054772A7820EF00A6C8EC /* Modules */,
+				B810547B2A782F0900A6C8EC /* Core */,
+				B810547D2A782F2800A6C8EC /* Localization */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B810547F2A782F9600A6C8EC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3772A885E7F009D9396 /* SceneDelegate */,
+				B83FA3762A885E75009D9396 /* AppDelegate */,
+				B810544E2A781E8900A6C8EC /* LaunchScreen.storyboard */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B81054842A78307800A6C8EC /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				B81054492A781E8800A6C8EC /* EarthQuest.xcdatamodeld */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		B81054852A78315C00A6C8EC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B81054A92A78325A00A6C8EC /* Assembly */,
+				B81054A42A78325600A6C8EC /* Presenter */,
+				B810549F2A78325200A6C8EC /* Interactor */,
+				B81054962A78324E00A6C8EC /* MVVM */,
+				B81054912A78324A00A6C8EC /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B81054912A78324A00A6C8EC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B81054922A78324A00A6C8EC /* HomeDashboardRouterProtocols.swift */,
+				B81054932A78324A00A6C8EC /* HomeDashboardRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B81054962A78324E00A6C8EC /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				B8060CF92A7EEA36007A0662 /* View */,
+				B8060D042A7F0C95007A0662 /* HomeDashboardUIFactory.swift */,
+				B81054972A78324E00A6C8EC /* HomeDashboardViewControllerViewModel.swift */,
+				B81054982A78324E00A6C8EC /* HomeDashboardViewProtocols.swift */,
+				B81054992A78324E00A6C8EC /* HomeDashboardViewControllerModel.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		B810549F2A78325200A6C8EC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B81054A02A78325200A6C8EC /* HomeDashboardInteractorProtocols.swift */,
+				B81054A12A78325200A6C8EC /* HomeDashboardInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B81054A42A78325600A6C8EC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B81054A52A78325600A6C8EC /* HomeDashboardPresenter.swift */,
+				B81054A62A78325600A6C8EC /* HomeDashboardPresenterProtocols.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B81054A92A78325A00A6C8EC /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B81054AA2A78325A00A6C8EC /* HomeDashboardAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B81054AF2A78453C00A6C8EC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B81054B02A78454A00A6C8EC /* GeoApify */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B81054B02A78454A00A6C8EC /* GeoApify */ = {
+			isa = PBXGroup;
+			children = (
+				B81054B92A79852200A6C8EC /* Places */,
+			);
+			path = GeoApify;
+			sourceTree = "<group>";
+		};
+		B81054B62A79846300A6C8EC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B81054B72A79846C00A6C8EC /* GeoApifyPlacesModels.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B81054B92A79852200A6C8EC /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				B81054B42A784AA800A6C8EC /* GeoApifyPlacesAPI.swift */,
+				B81054B62A79846300A6C8EC /* Data */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		B81054BA2A799EC200A6C8EC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B8060CF42A7DC775007A0662 /* ItemViews */,
+				B81054BB2A799ED000A6C8EC /* EarthQuestTabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B81054C12A7B074400A6C8EC /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B81054C22A7B074400A6C8EC /* EasyUIBuilder */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		B83FA34F2A85A2D3009D9396 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3672A881AF9009D9396 /* FirebaseTokenService */,
+				B83FA3502A85A2D8009D9396 /* RealtimeDatabaseService */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		B83FA3502A85A2D8009D9396 /* RealtimeDatabaseService */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA35A2A86C239009D9396 /* Service */,
+				B83FA3532A85A9A9009D9396 /* Data */,
+			);
+			path = RealtimeDatabaseService;
+			sourceTree = "<group>";
+		};
+		B83FA3532A85A9A9009D9396 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3622A8711F6009D9396 /* DatabaseReferencePath */,
+				B83FA35F2A86FEDE009D9396 /* Achievements */,
+				B83FA3572A86C08C009D9396 /* FirebaseDatabaseErrors */,
+				B83FA3562A86C07A009D9396 /* GeoAPI */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B83FA3562A86C07A009D9396 /* GeoAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3542A85A9BC009D9396 /* GeoAPIKeyModel.swift */,
+			);
+			path = GeoAPI;
+			sourceTree = "<group>";
+		};
+		B83FA3572A86C08C009D9396 /* FirebaseDatabaseErrors */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3582A86C0AF009D9396 /* FirebaseDatabaseErrors.swift */,
+			);
+			path = FirebaseDatabaseErrors;
+			sourceTree = "<group>";
+		};
+		B83FA35A2A86C239009D9396 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3512A85A309009D9396 /* FirebaseDatabaseService.swift */,
+				B83FA35B2A86C259009D9396 /* FirebaseDatabaseServiceProtocol.swift */,
+				B83FA37C2A886CCF009D9396 /* FirebaseDatabaseServiceBuilder.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B83FA35F2A86FEDE009D9396 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3602A86FF1B009D9396 /* AchievementsEnum.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		B83FA3622A8711F6009D9396 /* DatabaseReferencePath */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3632A871200009D9396 /* FirebaseDatabaseReferencePathEnum.swift */,
+			);
+			path = DatabaseReferencePath;
+			sourceTree = "<group>";
+		};
+		B83FA3672A881AF9009D9396 /* FirebaseTokenService */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA36D2A885701009D9396 /* UserDefaults */,
+				B83FA3692A881B32009D9396 /* Service */,
+			);
+			path = FirebaseTokenService;
+			sourceTree = "<group>";
+		};
+		B83FA3692A881B32009D9396 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA36A2A881B40009D9396 /* FirebaseTokenService.swift */,
+				B83FA3722A8858B8009D9396 /* FirebaseTokenServiceProtocol.swift */,
+				B83FA3742A885AFB009D9396 /* FirebaseTokenServiceBuilder.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B83FA36D2A885701009D9396 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA36E2A88573D009D9396 /* FirebaseTokenUserDefaults.swift */,
+				B83FA3702A88578D009D9396 /* FirebaseTokenUserDefaultsProtocol.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		B83FA3762A885E75009D9396 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B81054802A782FD900A6C8EC /* AppDelegate.swift */,
+				B83FA37A2A8860DE009D9396 /* AppDelegateDependencyInjection.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B83FA3772A885E7F009D9396 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B81054822A782FDD00A6C8EC /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		B83FA37E2A89AF97009D9396 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3882A8AE2B9009D9396 /* Data */,
+				B83FA3872A8AE2A0009D9396 /* Service */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B83FA3872A8AE2A0009D9396 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3852A8A6318009D9396 /* CoreDataServiceObjectBuilder.swift */,
+				B83FA3812A89B1FF009D9396 /* CoreDataService.swift */,
+				B83FA3802A89B1FF009D9396 /* CoreDataServiceServiceProtocols.swift */,
+				B83FA37F2A89B1FF009D9396 /* CoreDataServiceBuilder.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B83FA3882A8AE2B9009D9396 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3892A8AE2D7009D9396 /* CoreDataErrors.swift */,
+				B83FA38B2A8AF8F7009D9396 /* CoreDataModels.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B83FA38D2A8B04D4009D9396 /* AchievementsDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3952A8C3F23009D9396 /* UserDefaults */,
+				B83FA3942A8C3F19009D9396 /* Service */,
+			);
+			path = AchievementsDatabase;
+			sourceTree = "<group>";
+		};
+		B83FA3942A8C3F19009D9396 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3902A8B0539009D9396 /* AchievementsDatabaseService.swift */,
+				B83FA38F2A8B0539009D9396 /* AchievementsDatabaseServiceServiceProtocols.swift */,
+				B83FA38E2A8B0539009D9396 /* AchievementsDatabaseServiceBuilder.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B83FA3952A8C3F23009D9396 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				B83FA3962A8C3F87009D9396 /* AchievementsDatabaseServiceUserDefaults.swift */,
+				B83FA3982A8C3F9A009D9396 /* AchievementsDatabaseServiceUserDefaultsProtocol.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,8 +705,18 @@
 			buildRules = (
 			);
 			dependencies = (
+				B810547A2A782AD700A6C8EC /* PBXTargetDependency */,
 			);
 			name = EarthQuest;
+			packageProductDependencies = (
+				B81054B22A784A0000A6C8EC /* EasyNetworkManager */,
+				B80EBAEA2A7B091F00F967DB /* EasyUIBuilder */,
+				B8060CEA2A7D9450007A0662 /* ESTabBarController */,
+				B83FA3492A859DF0009D9396 /* FirebaseAnalytics */,
+				B83FA34B2A859DF0009D9396 /* FirebaseAuth */,
+				B83FA34D2A859DF0009D9396 /* FirebaseDatabase */,
+				B83FA3652A881A20009D9396 /* FirebaseMessaging */,
+			);
 			productName = EarthQuest;
 			productReference = B810543D2A781E8800A6C8EC /* EarthQuest.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +789,12 @@
 				Base,
 			);
 			mainGroup = B81054342A781E8800A6C8EC;
+			packageReferences = (
+				B81054782A782A2200A6C8EC /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				B81054B12A784A0000A6C8EC /* XCRemoteSwiftPackageReference "EasyNetworkManager" */,
+				B8060CE92A7D9450007A0662 /* XCRemoteSwiftPackageReference "ESTabBarController" */,
+				B83FA3482A859DF0009D9396 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B810543E2A781E8800A6C8EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,9 +811,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8060CF32A7DB5F5007A0662 /* mapp.json in Resources */,
+				B8060D192A8597C3007A0662 /* GoogleService-Info.plist in Resources */,
 				B81054502A781E8900A6C8EC /* LaunchScreen.storyboard in Resources */,
-				B810544D2A781E8900A6C8EC /* Assets.xcassets in Resources */,
-				B81054482A781E8800A6C8EC /* Main.storyboard in Resources */,
+				B8060CEF2A7DA261007A0662 /* UserLottie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +839,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81054452A781E8800A6C8EC /* ViewController.swift in Sources */,
+				B83FA3822A89B1FF009D9396 /* CoreDataServiceBuilder.swift in Sources */,
+				B8060D152A804C4E007A0662 /* HomeBadgeCellModel.swift in Sources */,
+				B83FA38C2A8AF8F7009D9396 /* CoreDataModels.swift in Sources */,
+				B810549C2A78324E00A6C8EC /* HomeDashboardViewProtocols.swift in Sources */,
+				B8060D082A7F11EF007A0662 /* HomeDashboardViewController + UICollectionViewDataSource.swift in Sources */,
+				B83FA37B2A8860DE009D9396 /* AppDelegateDependencyInjection.swift in Sources */,
+				B810549B2A78324E00A6C8EC /* HomeDashboardViewControllerViewModel.swift in Sources */,
+				B83FA3552A85A9BC009D9396 /* GeoAPIKeyModel.swift in Sources */,
+				B81054A72A78325700A6C8EC /* HomeDashboardPresenter.swift in Sources */,
+				B83FA36B2A881B40009D9396 /* FirebaseTokenService.swift in Sources */,
+				B8060D0C2A7F1810007A0662 /* HomeDashboardViewController + Constants.swift in Sources */,
+				B83FA3862A8A6318009D9396 /* CoreDataServiceObjectBuilder.swift in Sources */,
+				B83FA3832A89B1FF009D9396 /* CoreDataServiceServiceProtocols.swift in Sources */,
+				B83FA35C2A86C259009D9396 /* FirebaseDatabaseServiceProtocol.swift in Sources */,
+				B810549E2A78324E00A6C8EC /* HomeDashboardViewController.swift in Sources */,
+				B83FA3522A85A309009D9396 /* FirebaseDatabaseService.swift in Sources */,
+				B83FA36F2A88573D009D9396 /* FirebaseTokenUserDefaults.swift in Sources */,
+				B8060D0A2A7F14EB007A0662 /* HomeDashboardViewController + UIScrollViewDelegate.swift in Sources */,
+				B83FA3642A871200009D9396 /* FirebaseDatabaseReferencePathEnum.swift in Sources */,
+				B81054812A782FD900A6C8EC /* AppDelegate.swift in Sources */,
+				B81054B82A79846C00A6C8EC /* GeoApifyPlacesModels.swift in Sources */,
+				B8060D052A7F0C95007A0662 /* HomeDashboardUIFactory.swift in Sources */,
+				B83FA38A2A8AE2D7009D9396 /* CoreDataErrors.swift in Sources */,
+				B83FA37D2A886CCF009D9396 /* FirebaseDatabaseServiceBuilder.swift in Sources */,
+				B8060D012A7F021F007A0662 /* UIVIewExtension.swift in Sources */,
+				B81054BE2A79B4EF00A6C8EC /* TabBarLottieAnimateItemView.swift in Sources */,
+				B8060CF12A7DAD5A007A0662 /* EarthQuestLottie.swift in Sources */,
+				B83FA3612A86FF1B009D9396 /* AchievementsEnum.swift in Sources */,
+				B81054942A78324A00A6C8EC /* HomeDashboardRouterProtocols.swift in Sources */,
+				B83FA3732A8858B8009D9396 /* FirebaseTokenServiceProtocol.swift in Sources */,
+				B8060CF82A7DCF45007A0662 /* TabBarBasicItemView.swift in Sources */,
+				B81054BC2A799ED000A6C8EC /* EarthQuestTabBar.swift in Sources */,
+				B83FA3712A88578D009D9396 /* FirebaseTokenUserDefaultsProtocol.swift in Sources */,
+				B81054952A78324A00A6C8EC /* HomeDashboardRouter.swift in Sources */,
 				B810544B2A781E8800A6C8EC /* EarthQuest.xcdatamodeld in Sources */,
-				B81054412A781E8800A6C8EC /* AppDelegate.swift in Sources */,
-				B81054432A781E8800A6C8EC /* SceneDelegate.swift in Sources */,
+				B83FA3992A8C3F9A009D9396 /* AchievementsDatabaseServiceUserDefaultsProtocol.swift in Sources */,
+				B81054A32A78325200A6C8EC /* HomeDashboardInteractor.swift in Sources */,
+				B81054832A782FDE00A6C8EC /* SceneDelegate.swift in Sources */,
+				B810549D2A78324E00A6C8EC /* HomeDashboardViewControllerModel.swift in Sources */,
+				B83FA35E2A86F491009D9396 /* CombineExtensions.swift in Sources */,
+				B83FA3752A885AFB009D9396 /* FirebaseTokenServiceBuilder.swift in Sources */,
+				B83FA3972A8C3F87009D9396 /* AchievementsDatabaseServiceUserDefaults.swift in Sources */,
+				B83FA3932A8B0539009D9396 /* AchievementsDatabaseService.swift in Sources */,
+				B8060D032A7F0244007A0662 /* UIColorExtensions.swift in Sources */,
+				B8060D0E2A7F1D44007A0662 /* HomeBadgeCollectionLayout.swift in Sources */,
+				B81054A82A78325700A6C8EC /* HomeDashboardPresenterProtocols.swift in Sources */,
+				B8060CFB2A7EEA55007A0662 /* HomeBadgeCollectionViewCell.swift in Sources */,
+				B8060CF62A7DCAEE007A0662 /* TabBarBounceAnimationItemView.swift in Sources */,
+				B81054B52A784AA800A6C8EC /* GeoApifyPlacesAPI.swift in Sources */,
+				B83FA3842A89B1FF009D9396 /* CoreDataService.swift in Sources */,
+				B81054AB2A78325A00A6C8EC /* HomeDashboardAssembly.swift in Sources */,
+				B83FA3922A8B0539009D9396 /* AchievementsDatabaseServiceServiceProtocols.swift in Sources */,
+				B8060CFE2A7EF9AE007A0662 /* HomeBadgeCellUIFactory.swift in Sources */,
+				B83FA3592A86C0AF009D9396 /* FirebaseDatabaseErrors.swift in Sources */,
+				B81054A22A78325200A6C8EC /* HomeDashboardInteractorProtocols.swift in Sources */,
+				B83FA3912A8B0539009D9396 /* AchievementsDatabaseServiceBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,17 +928,13 @@
 			target = B810543C2A781E8800A6C8EC /* EarthQuest */;
 			targetProxy = B81054612A781E8900A6C8EC /* PBXContainerItemProxy */;
 		};
+		B810547A2A782AD700A6C8EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B81054792A782AD700A6C8EC /* SwiftLintPlugin */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B81054462A781E8800A6C8EC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B81054472A781E8800A6C8EC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B810544E2A781E8900A6C8EC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +1065,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EarthQuest/EarthQuest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 548J77AC83;
@@ -446,9 +1073,9 @@
 				INFOPLIST_FILE = EarthQuest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,6 +1094,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EarthQuest/EarthQuest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 548J77AC83;
@@ -474,9 +1102,9 @@
 				INFOPLIST_FILE = EarthQuest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +1234,83 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8060CE92A7D9450007A0662 /* XCRemoteSwiftPackageReference "ESTabBarController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eggswift/ESTabBarController";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.9.0;
+			};
+		};
+		B81054782A782A2200A6C8EC /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint#plug-in-support";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.4;
+			};
+		};
+		B81054B12A784A0000A6C8EC /* XCRemoteSwiftPackageReference "EasyNetworkManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/G0mdzix/EasyNetworkManager";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		B83FA3482A859DF0009D9396 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8060CEA2A7D9450007A0662 /* ESTabBarController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8060CE92A7D9450007A0662 /* XCRemoteSwiftPackageReference "ESTabBarController" */;
+			productName = ESTabBarController;
+		};
+		B80EBAEA2A7B091F00F967DB /* EasyUIBuilder */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EasyUIBuilder;
+		};
+		B81054792A782AD700A6C8EC /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B81054782A782A2200A6C8EC /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
+		B81054B22A784A0000A6C8EC /* EasyNetworkManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B81054B12A784A0000A6C8EC /* XCRemoteSwiftPackageReference "EasyNetworkManager" */;
+			productName = EasyNetworkManager;
+		};
+		B83FA3492A859DF0009D9396 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B83FA3482A859DF0009D9396 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B83FA34B2A859DF0009D9396 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B83FA3482A859DF0009D9396 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B83FA34D2A859DF0009D9396 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B83FA3482A859DF0009D9396 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		B83FA3652A881A20009D9396 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B83FA3482A859DF0009D9396 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B81054492A781E8800A6C8EC /* EarthQuest.xcdatamodeld */ = {

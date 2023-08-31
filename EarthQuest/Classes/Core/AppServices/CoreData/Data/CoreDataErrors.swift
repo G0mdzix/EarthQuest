@@ -1,8 +1,17 @@
-//
-//  CoreDataErrors.swift
-//  EarthQuest
-//
-//  Created by Mateusz Gozdzik on 15/08/2023.
-//
-
 import Foundation
+
+enum CoreDataErrors: Error {
+  case fetchFailed
+  case deleteFailed
+}
+
+extension CoreDataErrors {
+  public var description: String {
+    switch self {
+    case .fetchFailed:
+      return "Fetched failed"
+    case .deleteFailed:
+      return "Delete failed"
+    }
+  }
+}

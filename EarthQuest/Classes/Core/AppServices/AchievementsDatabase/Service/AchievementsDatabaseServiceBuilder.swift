@@ -7,7 +7,8 @@ enum AchievementsDatabaseServiceBuilder {
       services: .init(
         coreDataService: CoreDataServiceBuilder.build(containerName: .EarthQuest),
         firebaseTokenService: FirebaseTokenServiceBuilder.build(),
-        firebaseDatabaseService: FirebaseDatabaseServiceBuilder.build()
+        firebaseDatabaseService: FirebaseDatabaseServiceBuilder.build(),
+        achievementsDatabaseServiceUserDefaults: AchievementsDatabaseServiceUserDefaults()
       )
     )
   }

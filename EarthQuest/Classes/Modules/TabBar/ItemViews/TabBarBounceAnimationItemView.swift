@@ -3,48 +3,64 @@ import Foundation
 import UIKit
 import ESTabBarController
 
-class ExampleBasicContentView: ESTabBarItemContentView {
+class TabBarBounceAnimationItemView: TabBarBasicItemView {
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        textColor = UIColor.init(white: 175.0 / 255.0, alpha: 1.0)
-        highlightTextColor = UIColor.init(red: 254/255.0, green: 73/255.0, blue: 42/255.0, alpha: 1.0)
-        iconColor = UIColor.init(white: 175.0 / 255.0, alpha: 1.0)
-        highlightIconColor = UIColor.init(red: 254/255.0, green: 73/255.0, blue: 42/255.0, alpha: 1.0)
-    }
+  // MARK: - Private Typealiases
 
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
+  private typealias Builder = BounceAnimationItemViewUIFactory
 
-class TabBarBounceAnimationItemView: ExampleBasicContentView {
-
-  var duration = 0.3
+  // MARK: - Lifecycle
 
   override init(frame: CGRect) {
     super.init(frame: frame)
   }
 
+  @available(*, unavailable)
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 
-  override func selectAnimation(animated: Bool, completion: (() -> ())?) {
+  // MARK: - OverrideFunctions
+
+  override func selectAnimation(animated: Bool, completion: (() -> Void)?) {
     self.bounceAnimation()
     completion?()
   }
 
-  override func reselectAnimation(animated: Bool, completion: (() -> ())?) {
+  override func reselectAnimation(animated: Bool, completion: (() -> Void)?) {
     self.bounceAnimation()
     completion?()
   }
 
-  func bounceAnimation() {
-    let impliesAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
-    impliesAnimation.values = [1.0, 1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
-    impliesAnimation.duration = duration * 2
-    impliesAnimation.calculationMode = CAAnimationCalculationMode.cubic
+  // MARK: - PrivateFunctions
+
+  private func bounceAnimation() {
+    let impliesAnimation = Builder.makeImpliesAnimation()
     imageView.layer.add(impliesAnimation, forKey: nil)
   }
+}
+
+// MARK: - UIFactory
+
+private enum BounceAnimationItemViewUIFactory {
+  static func makeImpliesAnimation() -> CAKeyframeAnimation {
+    let impliesAnimation = CAKeyframeAnimation(keyPath: KeyPath.impliesAnimationKeyPath)
+    impliesAnimation.values = Constants.impliesAnimationValues
+    impliesAnimation.duration = Constants.animationDuration
+    impliesAnimation.calculationMode = CAAnimationCalculationMode.cubic
+    return impliesAnimation
+  }
+}
+
+// MARK: - KeyPath
+
+private enum KeyPath {
+  static let impliesAnimationKeyPath = "transform.scale"
+}
+
+// MARK: - Constants
+
+private enum Constants {
+  static let animationDuration = 0.6
+  static let impliesAnimationValues = [1.0, 1.4, 0.9, 1.15, 0.95, 1.02, 1.0]
 }

@@ -1,8 +1,17 @@
-//
-//  AppDelegateDependencyInjection.swift
-//  EarthQuest
-//
-//  Created by Mateusz Gozdzik on 13/08/2023.
-//
-
 import Foundation
+
+// MARK: - Build
+
+enum AppDelegateDependencyInjection {
+  static func build() -> AppDelegateDependency {
+    return AppDelegateDependency(
+      firebaseTokenServiceProtocol: FirebaseTokenServiceBuilder.build()
+    )
+  }
+}
+
+// MARK: - Services
+
+struct AppDelegateDependency {
+  let firebaseTokenServiceProtocol: FirebaseTokenServiceProtocol
+}

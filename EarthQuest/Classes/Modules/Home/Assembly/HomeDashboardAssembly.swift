@@ -1,7 +1,7 @@
 import UIKit
 
-class HomeDashboardAssembly {
-  func build() -> UIViewController {
+enum HomeDashboardAssembly {
+  static func build() -> UIViewController {
     let view = CreateModules.buildViewController()
     let interactor = CreateModules.buildInteractor()
     let router = CreateModules.buildRouter()
@@ -26,7 +26,15 @@ private enum CreateModules {
   }
 
   static func buildInteractor() -> HomeDashboardInteractor {
-    let interactor = HomeDashboardInteractor()
+    let interactor = HomeDashboardInteractor(
+      services: HomeDashboardInteractor.Services(
+        firebaseDatabaseService: FirebaseDatabaseServiceBuilder.build(),
+        coreDataServiceServiceProtocol: CoreDataServiceBuilder.build(
+          containerName: .EarthQuest
+        ),
+        achievementsDatabaseService: AchievementsDatabaseServiceBuilder.build()
+      )
+    )
     return interactor
   }
 

@@ -1,8 +1,11 @@
-//
-//  FirebaseTokenServiceBuilder.swift
-//  EarthQuest
-//
-//  Created by Mateusz Gozdzik on 13/08/2023.
-//
-
 import Foundation
+
+enum FirebaseTokenServiceBuilder {
+  static func build() -> FirebaseTokenService {
+    return FirebaseTokenService(
+      services: .init(
+        firebaseTokenUserDefaultsProtocol: FirebaseTokenUserDefaults()
+      )
+    )
+  }
+}

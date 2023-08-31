@@ -1,7 +1,7 @@
 import UIKit
 import EasyUIBuilder
+import FirebaseDatabase
 
-// swiftlint:disable all
 class HomeDashboardViewController: UIViewController {
 
   // MARK: - Private Typealiases
@@ -12,13 +12,15 @@ class HomeDashboardViewController: UIViewController {
 
   var presenter: HomeDashboardViewCallBack?
 
+  var modelToDelete: [HomeBadgeCellModel]?
+
   // MARK: - Subviews
 
   private let scrollView = UIScrollView()
-
-  private var collectionView = Builder.makeCollectionView(identifier: "Cell")
-
   private let contentView = UIView()
+  private let collectionView = Builder.makeCollectionView(
+    identifier: Constants.CollectionView.identifier
+  )
 
   // MARK: - Lifecycle
 
@@ -35,12 +37,10 @@ class HomeDashboardViewController: UIViewController {
     super.viewDidLoad()
     guard let presenter = presenter else { return }
     presenter.handleViewDidLoad()
-    view.backgroundColor = AppColorMode.currentMode().mainColor
-    // dupa()
+    layout()
+    configure()
 
-    kupa()
-    maupa()
-    scrollView.delegate = self
+    presenter.makeMockBadgeCellModel()
   }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -59,96 +59,43 @@ class HomeDashboardViewController: UIViewController {
 // MARK: - HomeDashboardViewDelegate
 
 extension HomeDashboardViewController: HomeDashboardViewDelegate {
+  func takeMockModel(model: [HomeBadgeCellModel]) {
+    modelToDelete = model
+  }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
 extension HomeDashboardViewController: UICollectionViewDelegateFlowLayout {}
 
-// MARK: - UICollectionViewDataSource
+// MARK: - Configure
 
-extension HomeDashboardViewController: UICollectionViewDataSource {
+extension HomeDashboardViewController {
+  private func configure() {
+    configureBackground()
+    configureCollectionView()
+    configureScrollView()
+    configureContentView()
+  }
 
-  fileprivate func setupCollectionView() {
+  private func configureBackground() {
+    view.backgroundColor = AppColorMode.currentMode().mainColor
+  }
+
+  private func configureCollectionView() {
     collectionView.delegate = self
     collectionView.dataSource = self
   }
 
-  //MARK : CollectionView Delegate Methods
-  func collectionView(
-    _ collectionView: UICollectionView,
-    numberOfItemsInSection section: Int
-  ) -> Int {
-    return 2
+  private func configureScrollView() {
+    scrollView.delegate = self
+    scrollView.isScrollEnabled = true
+    scrollView.backgroundColor = .black
+    scrollView.contentSize = contentView.frame.size
   }
 
-  func collectionView(
-    _ collectionView: UICollectionView,
-    cellForItemAt indexPath: IndexPath
-  ) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(
-      withReuseIdentifier: "Cell",
-      for: indexPath
-    ) as! HomeBadgeCollectionViewCell
-
-    cell.editButton.addTarget(self, action: #selector(editCellButton), for: .touchUpInside)
-    cell.editButton.tag = indexPath.row
-    return cell
-  }
-
-  func collectionView(
-    _ collectionView: UICollectionView,
-    layout collectionViewLayout: UICollectionViewLayout,
-    sizeForItemAt indexPath: IndexPath
-  ) -> CGSize {
-    return CGSize(width: (view.frame.width / 2) - 20, height: 110)
-  }
-
-  func collectionView(
-    _ collectionView: UICollectionView,
-    layout collectionViewLayout: UICollectionViewLayout,
-    insetForSectionAt section: Int
-  ) -> UIEdgeInsets {
-    return UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-  }
-
-  func numberOfSections(in collectionView: UICollectionView) -> Int {
-    return 3
-  }
-
-
-  //MARK : - Actions
-  @objc func addNewList() {
-      print("Add new list")
-  }
-  @objc func editCellButton() {
-      print("Edit")
-  }
-
-}
-
-
-// MARK: - UIScrollViewDelegate
-
-extension HomeDashboardViewController: UIScrollViewDelegate {
-  func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-    self.tabBarController?.tabBar.isHidden = true
-  }
-
-  func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-    dispatchScrollViewInteractionUpdate()
-  }
-
-  func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-    dispatchScrollViewInteractionUpdate()
-  }
-
-
-  private func dispatchScrollViewInteractionUpdate() {
-    DispatchQueue.main.async {
-      print("UIScrollView nie jest przewijany.")
-      self.tabBarController?.tabBar.isHidden = false
-    }
+  private func configureContentView() {
+    contentView.sizeToFit()
   }
 }
 
@@ -161,37 +108,6 @@ extension HomeDashboardViewController {
       print(data)
     }
   }
-
-  private func kupa() {
-    view.addSubview(scrollView)
-    scrollView.snp.makeConstraints { make in
-      make.top.leading.trailing.bottom.equalToSuperview()
-    }
-    scrollView.isScrollEnabled = true
-    scrollView.backgroundColor = .black
-  }
-
-  private func maupa() {
-    scrollView.addSubview(contentView)
-
-    contentView.snp.makeConstraints { make in
-      make.center.equalToSuperview()
-      make.edges.equalToSuperview()
-    }
-
-    contentView.sizeToFit()
-    scrollView.contentSize = contentView.frame.size
-
-    setupCollectionView()
-    scrollView.addSubview(collectionView)
-
-    collectionView.snp.makeConstraints { make in
-      make.centerX.equalToSuperview()
-      make.top.equalTo(scrollView.snp.top)
-      make.width.equalToSuperview()
-      make.height.equalTo(450)
-    }
-  }
 }
 
 // MARK: - Layouts
@@ -199,16 +115,36 @@ extension HomeDashboardViewController {
 extension HomeDashboardViewController {
   private func layout() {
     addViews()
+    collectionViewLayout()
+    contentViewLayout()
+    scrollViewLayout()
   }
 
   private func addViews() {
+    view.addSubview(scrollView)
+    scrollView.addSubview(contentView)
+    scrollView.addSubview(collectionView)
   }
-}
 
-// MARK: - Constants
+  private func collectionViewLayout() {
+    collectionView.snp.makeConstraints { make in
+      make.centerX.equalToSuperview()
+      make.top.equalTo(scrollView.snp.top)
+      make.width.equalToSuperview()
+      make.height.equalTo(Constants.CollectionView.height)
+    }
+  }
 
-private enum Constants {
-  enum Coder {
-    static let fatalError = "init(coder:) has not been implemented"
+  private func contentViewLayout() {
+    contentView.snp.makeConstraints { make in
+      make.center.equalToSuperview()
+      make.edges.equalToSuperview()
+    }
+  }
+
+  private func scrollViewLayout() {
+    scrollView.snp.makeConstraints { make in
+      make.right.left.top.bottom.equalToSuperview()
+    }
   }
 }

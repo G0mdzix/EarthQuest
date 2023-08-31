@@ -23,6 +23,10 @@ class CoreDataService {
 // MARK: - CoreDataServiceProtocol
 
 extension CoreDataService: CoreDataServiceProtocol {
+  func getContainer() -> NSPersistentContainer {
+    return container
+  }
+
   func saveContext() {
     guard container.viewContext.hasChanges else { return }
     guard (try? container.viewContext.save()) != nil else { return }

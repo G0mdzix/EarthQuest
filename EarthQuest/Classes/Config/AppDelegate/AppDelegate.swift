@@ -1,25 +1,14 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseMessaging
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-  // MARK: - Private Typealiases
+  // MARK: - Private Properties
 
-  private typealias Builder = 
-
-  // MARK: - Core Data stack
-
-  lazy var persistentContainer: NSPersistentContainer = {
-    let container = NSPersistentContainer(name: "EarthQuest")
-    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-      if let error = error as NSError? {
-        fatalError("Unresolved error \(error), \(error.userInfo)")
-      }
-    })
-    return container
-  }()
+  private let service = AppDelegateDependencyInjection.build()
 }
 
 // MARK: Lifecycle
@@ -29,7 +18,7 @@ extension AppDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    FirebaseApp.configure()
+    configure()
     return true
   }
 
@@ -51,19 +40,20 @@ extension AppDelegate {
   }
 }
 
+// MARK: - MessagingDelegate
+
+extension AppDelegate: MessagingDelegate {
+  func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+    guard let token = fcmToken else { return }
+    service.firebaseTokenServiceProtocol.extractFCMToken(token)
+  }
+}
+
 // MARK: - PrivateFunctions
-// MARK: - Core Data Saving support <- To delete in future
 
 extension AppDelegate {
-  func saveContext () {
-    let context = persistentContainer.viewContext
-    if context.hasChanges {
-      do {
-        try context.save()
-      } catch {
-        let nserror = error as NSError
-        fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-      }
-    }
+  private func configure() {
+    FirebaseApp.configure()
+    Messaging.messaging().delegate = self
   }
 }

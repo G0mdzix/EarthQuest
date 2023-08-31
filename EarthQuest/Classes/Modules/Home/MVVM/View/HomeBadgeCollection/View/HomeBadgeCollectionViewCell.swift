@@ -10,12 +10,12 @@ class HomeBadgeCollectionViewCell: UICollectionViewCell {
   // MARK: - Subviews
 
   let badgeButton = Builder.makeBadgeButton()
+  let progressView = Builder.makeProgresView()
+  let iconImageView = Builder.makeIconImageView()
+  let titleLabel = EasyUIBuilder.Labels.build(model: Builder.titleLabelModel)
 
   // MARK: - Private Subviews
   private let progresViewContainer = UIView()
-  private let progressView = Builder.makeProgresView()
-  private let iconImageView = Builder.makeIconImageView()
-  private let titleLabel = EasyUIBuilder.Labels.build(model: Builder.titleLabelModel)
 
   // MARK: - Lifecycle
 
@@ -97,7 +97,6 @@ extension HomeBadgeCollectionViewCell {
     configureCellRoundCorners()
     gradientBackgroundColor()
     configureCellShadow()
-    titleLabel.text = "dupa"
   }
 
   private func configureCellShadow() {

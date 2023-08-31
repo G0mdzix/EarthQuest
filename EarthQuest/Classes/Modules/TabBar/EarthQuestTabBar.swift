@@ -1,110 +1,88 @@
 import Foundation
 import EasyUIBuilder
 import UIKit
+import ESTabBarController
 
-class EarthQuestTabBar: UITabBarController {
+// MARK: - Builder
 
-  // MARK: - Private Typealiases
-
-  private typealias builder = OnboardingUIFactory
-
-  let layer = CAShapeLayer()
-  var layerHeight = CGFloat()
-
-  let bgColor: UIColor = .green
-  let sColor: UIColor = .blue
-  let tColor: UIColor = .red
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    view.backgroundColor = .systemPink
-    UITabBar.appearance().barTintColor = .purple
-    tabBar.tintColor = .label
-    setupVCs()
-    setUpTabBar()
+enum EarthQuestTabBar {
+  static func make() -> ESTabBarController {
+    let tabBarController = ESTabBarController()
+    tabBarController.viewControllers = makeViewControllers()
+    return tabBarController
   }
+}
 
-  func setupVCs() {
-    viewControllers = [
-      createNavController(
-        for: HomeDashboardAssembly.build(),
-        title: "Home",
-        image: UIImage(systemName: "house")!
-      ),
-      createNavController(
-        for: ViewController(),
-        title: "TEST",
-        image: UIImage(systemName: "person")!
-      )
+// MARK: - ViewControllersBuilder
+
+extension EarthQuestTabBar {
+  private static func makeViewControllers() -> [UIViewController] {
+    let viewControllers: [UIViewController] = [
+      makeHomeDashboardViewController(),
+      makeMapDashboardViewController(),
+      makeUserDashboardViewController()
     ]
+    return viewControllers
   }
 
-  func setUpTabBar() {
-      // tab bar layer
-      let x: CGFloat = 10
-      let y: CGFloat = 80
-      let width = self.tabBar.bounds.width
-      let height = self.tabBar.bounds.height + y
-      layerHeight = height
-
-      // Tworzymy zaokrąglony prostokąt tylko dla górnych krawędzi
-      let roundedRectPath = getTabBarRoundedRectPath()
-
-      layer.fillColor = bgColor.cgColor
-      layer.path = roundedRectPath.cgPath
-
-      // tab bar shadow
-      layer.shadowColor = tColor.cgColor
-      layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-      layer.shadowRadius = 5.0
-      layer.shadowOpacity = 0.5
-
-      // add tab bar layer
-      self.tabBar.layer.insertSublayer(layer, at: 0)
-
-      // fix items positioning
-      tabBar.itemWidth = width / 6
-      tabBar.itemPositioning = .centered
-      tabBar.unselectedItemTintColor = sColor
-  }
-
-  private func getTabBarRoundedRectPath() -> UIBezierPath {
-    return UIBezierPath(
-      roundedRect: CGRect(
-        x: 0,
-        y: UIScreen.main.bounds.minY - 10,
-        width: tabBar.bounds.width,
-        height: tabBar.bounds.height + 80
-      ),
-      byRoundingCorners: [.topLeft, .topRight],
-      cornerRadii: CGSize(width: 20, height: 20)
+  private static func makeHomeDashboardViewController() -> UIViewController {
+    let vc = HomeDashboardAssembly.build()
+    vc.tabBarItem = ESTabBarItem.init(
+      TabBarBounceAnimationItemView(),
+      title: Localizable.homeDashboardTitle,
+      image: EasyUIAssets.Images.homeFill.image,
+      selectedImage: EasyUIAssets.Images.homeHollow.image
     )
+    return vc
   }
 
-  private func createNavController(
-    for rootViewController: UIViewController,
-    title: String,
-    image: UIImage
-  ) -> UIViewController {
-    let navController = UINavigationController(rootViewController: rootViewController)
-    navController.tabBarItem.title = title
-    navController.tabBarItem.image = image
-    navController.navigationBar.prefersLargeTitles = true
-    // rootViewController.navigationItem.title = title
-    return navController
+  private static func makeMapDashboardViewController() -> UIViewController {
+    let vc = HomeDashboardAssembly.build()
+    vc.tabBarItem = ESTabBarItem.init(
+      TabBarBounceAnimationItemView(),
+      title: Localizable.mapDashboardTitle,
+      image: EasyUIAssets.Images.mapFill.image,
+      selectedImage: EasyUIAssets.Images.mapHollow.image
+    )
+    return vc
+  }
+
+  private static func makeUserDashboardViewController() -> UIViewController {
+    let vc = HomeDashboardAssembly.build()
+    vc.tabBarItem = ESTabBarItem.init(
+      TabBarBounceAnimationItemView(),
+      title: Localizable.userDashboardTitle,
+      image: EasyUIAssets.Images.userFill.image,
+      selectedImage: EasyUIAssets.Images.userHollow.image
+    )
+    return vc
   }
 }
 
-// MARK: - Constants
+// MARK: - PrivateFunctions
 
-private enum Constants {
-
+extension EarthQuestTabBar {
+  private static func makeLottieTabBarItem(
+    vc: UIViewController,
+    lottieName: EarthQuestLottie
+  ) -> UITabBarItem {
+    guard let tabBarItem = vc.tabBarItem else { return UITabBarItem() }
+    let lottieView = TabBarLottieAnimateItemView()
+    lottieView.lottieAnimationName = lottieName
+    vc.tabBarItem = ESTabBarItem.init(
+      lottieView,
+      title: nil,
+      image: nil,
+      selectedImage: nil
+    )
+    return tabBarItem
+  }
 }
 
-class ViewController: UIViewController {
+// MARK: - PrivateLocalizable
 
-    override func viewDidLoad() {
-      super.viewDidLoad()
-      view.backgroundColor = .red
-    }
+private enum Localizable {
+  static let userDashboardTitle = "Home"
+  static let mapDashboardTitle = "Map"
+  static let homeDashboardTitle = "User"
 }

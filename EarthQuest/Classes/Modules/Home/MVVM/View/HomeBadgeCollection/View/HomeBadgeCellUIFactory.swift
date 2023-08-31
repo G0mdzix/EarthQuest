@@ -12,7 +12,7 @@ enum HomeBadgeCellUIFactory {
 
   static func makeBadgeButton() -> UIButton {
     let button = UIButton(type: .custom) as UIButton
-    button.setImage(EasyUIAssets.Images.homeHollow.image, for: UIControl.State.normal)
+    button.setImage(EasyUIAssets.Images.dots.image, for: UIControl.State.normal)
     return button
   }
 

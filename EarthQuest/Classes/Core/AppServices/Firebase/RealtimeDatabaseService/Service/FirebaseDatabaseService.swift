@@ -8,6 +8,13 @@ class FirebaseDatabaseService {
 
   private var cancellables = Set<AnyCancellable>()
   private let databaseReference = Database.database().reference()
+  private let services: Service
+
+  // MARK: - Lifecycle
+
+  init(services: Service) {
+    self.services = services
+  }
 }
 
 // MARK: - FirebaseDatabaseServiceProtocol
@@ -19,12 +26,8 @@ extension FirebaseDatabaseService: FirebaseDatabaseServiceProtocol {
       .eraseToAnyPublisher()
   }
 
-  func initializeUserAchievements() {
-    checkIfRecordExists()
-    let newChildReference = getUserDatabaseReference(path: .achievements)
-    AchievementsEnum.allCases.forEach {
-      newChildReference.child($0.rawValue).setValue(0)
-    }
+  func getUserDatabaseReference(path: String) -> DatabaseReference {
+    return databaseReference.child(path)
   }
 }
 
@@ -35,8 +38,7 @@ extension FirebaseDatabaseService {
     return Future<Data, Error> { promise in
       self.databaseReference.observeSingleEvent(of: .value) { snapshot in
         guard snapshot.exists(), let value = snapshot.value else {
-          promise(.failure(FirebaseDatabaseErrors.snapshotNotFound))
-          return
+          return promise(.failure(FirebaseDatabaseErrors.snapshotNotFound))
         }
 
         promise(Result {
@@ -46,26 +48,12 @@ extension FirebaseDatabaseService {
     }
     .eraseToAnyPublisher()
   }
+}
 
-  private func getUniqueUserID() -> String {
-    guard let id = databaseReference.childByAutoId().key else { return String() }
-    return id
-  }
+// MARK: - Services
 
-  private func getUserDatabaseReference(path: DatabaseReferencePath) -> DatabaseReference {
-    return databaseReference
-      .child(DatabaseReferencePath.users.rawValue)
-      .child(getUniqueUserID())
-      .child(path.rawValue)
-  }
-
-  private func checkIfRecordExists() {
-    getUserDatabaseReference(path: .achievements).observeSingleEvent(of: .value) { value in
-      if value.exists() {
-        print("balcerek")
-      } else {
-        print("JUJ")
-      }
-    }
+extension FirebaseDatabaseService {
+  struct Service {
+    let firebaseTokenServiceProtocol: FirebaseTokenServiceProtocol
   }
 }

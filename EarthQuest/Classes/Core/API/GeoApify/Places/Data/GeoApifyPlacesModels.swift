@@ -2,6 +2,7 @@ import Foundation
 
 // MARK: - Models
 
+// swiftlint:disable all
 struct GeoApifyPlacesFeatureCollection: Codable {
   let type: String
   let features: [GeoApifyPlacesFeature]
